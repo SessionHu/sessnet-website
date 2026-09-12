@@ -1,10 +1,16 @@
 @charset 'utf-8';
 
 .featureCards {
-	display: flex;
+  display: flex;
   gap: 4px;
   > * {
     width: 100%;
+    border-color: #eee;
+    border-style: dotted;
+    border-radius: 8px;
+    @media (prefers-color-scheme: dark) {
+      border-color: #222;
+    }
     > * {
       margin: .5em 0;
     }

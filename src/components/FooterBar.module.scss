@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+.footerBar {
+  a {
+    color: #666;
+    @media (prefers-color-scheme: dark) {
+      color: #eee;
+    }
+  }
+}

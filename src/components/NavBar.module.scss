@@ -4,11 +4,20 @@
 	display: flex;
   margin: 0;
   padding: 4px 0;
-  gap: 8px;
+  gap: 16px;
   > * {
 	  display: block;
     &:first-child {
       margin-right: auto;
+      > * {
+        color: inherit;
+      }
+    }
+  }
+  a {
+    color: #666;
+    @media (prefers-color-scheme: dark) {
+      color: #eee;
     }
   }
 }

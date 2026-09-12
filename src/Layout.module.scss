@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+body {
+  font-family: monospace, serif, sans-serif;
+  line-height: 1.2;
+  margin: 12px;
+  color: #111;
+  background-color: #fefefe;
+  color-scheme: light;
+  @media (prefers-color-scheme: dark) {
+    color: #fdfdfd;
+    background-color: #111;
+    color-scheme: dark;
+  }
+}
+
+a {
+  text-decoration-line: none;
+  color: #6cf;
+  &:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #6cf;
+  }
+}

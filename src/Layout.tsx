@@ -3,16 +3,18 @@ import { Outlet } from 'react-router-dom'
 import NavBar from './components/NavBar';
 import FooterBar from './components/FooterBar';
 
+import './Layout.module.scss';
+
 export default function Layout() {
   return (
     <>
-    	<NavBar />
+      <NavBar />
       <main>
         <Suspense>
           <Outlet />
         </Suspense>
       </main>
-    	<FooterBar />
+      <FooterBar />
     </>
   )
 }
