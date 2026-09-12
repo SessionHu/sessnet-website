@@ -16,3 +16,37 @@
     }
   }
 }
+
+.partnersList {
+  overflow: hidden;
+  width: 100%;
+  > * {
+    display: flex;
+    gap: 16px;
+    height: 160px;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    animation: scrolllist infinite 3s linear;
+    > * {
+      display: flex;
+      height: inherit;
+    }
+    img {
+      height: 100%;
+      width: fit-content;
+      object-fit: contain;
+      margin: auto;
+    }
+  }
+}
+
+@keyframes scrolllist {
+	from {
+    transform: translateX(0%);
+  }
+	to {
+    transform: translateX(-50%);
+  }
+}
