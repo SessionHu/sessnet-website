@@ -22,7 +22,7 @@ interface ScrollListProps {
 }
 
 const ScrollList = ({ pl }: ScrollListProps) => {
-	return (
+  return (
     <div className={styles.scrollList}>
       <ul>
         <ClientOnly>{() => {
