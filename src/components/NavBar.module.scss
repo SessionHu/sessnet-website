@@ -1,16 +1,19 @@
 @charset 'utf-8';
 
 .navBar {
-	display: flex;
+  display: flex;
   margin: 0;
   padding: 4px 0;
   gap: 16px;
   > * {
-	  display: block;
+    display: block;
     &:first-child {
       margin-right: auto;
       > * {
         color: inherit;
+      }
+      @media (max-width: 480px) {
+        display: none;
       }
     }
   }
