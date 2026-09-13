@@ -23,6 +23,13 @@
 .scrollList {
   overflow: hidden;
   width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 4%,
+    black 96%,
+    transparent
+  );
   > * {
     display: flex;
     gap: 16px;
