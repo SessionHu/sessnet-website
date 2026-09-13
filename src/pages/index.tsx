@@ -16,31 +16,17 @@ const FeatureCard = ({ title, children }: FeatureCardProps) => {
   );
 };
 
-const PartnersList: React.FC = () => {
-  const pl: [string, string, any?][] = [
-    ['p', 'https://dn42.li/dn42.svg', {height:'200%',transform:'translateY(-25%)'}],
-    ['p', 'https://raw.githubusercontent.com/NeoCloud/NeoNetwork/master/logo.png'],
-    ['p', 'https://peeringdb-media-prod.s3.amazonaws.com/media/logos_user_supplied/network-33599-7fa2825b.jpg', {height:'80%'}],
-    ['p', 'https://peeringdb-media-prod.s3.amazonaws.com/media/logos_user_supplied/organization-42473-dc42bfbc.png', {height:'80%'}],
-    ['p', 'https://dn42.burble.com/burble-dn42-64.png', {height:'30%'}],
-    ['p', 'https://iedon.net/favicon.ico'],
-    ['p', 'https://blog.sherpherd.net/img/sernet-logo-small.svg'],
-    ['p', 'https://avatars.githubusercontent.com/u/88564180?s=200&v=4'],
-    ['p', 'https://nosla42.pmman.tech/storage/logo-light.webp'],
-    ['p', 'https://he.net/images/helogo.gif', {height:'40%'}],
-    ['p', 'https://cloud.nbdnet.com/storage/logo-light.webp', {height:'50%'}],
-    ['p', 'https://cogentco.com/files/images/c2020/cogentco_logo.png', {height:'40%'}],
-    ['p', 'https://static.xhustudio.eu.org/images/svg/CF_logomark.svg', {height:'40%'}],
-    ['p', 'https://intranet.services/favicon.svg'],
-    ['p', 'https://szsyzx.cn/assets/icon.svg'],
-    ['p', 'https://www.constant.com/favicons/favicon-96.png', {height:'80%'}],
-  ];
+interface ScrollListProps {
+  pl: [string, string, any?][];
+}
+
+const ScrollList = ({ pl }: ScrollListProps) => {
   for (let i = pl.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [pl[i], pl[j]] = [pl[j], pl[i]];
   }
 	return (
-    <div className={styles.partnersList}>
+    <div className={styles.scrollList}>
       <ul>
         {pl.concat(pl).map((e, i) => {
           return (
@@ -74,10 +60,35 @@ export default () => {
       </section>
       <section>
         <h2>Partners</h2>
-        <PartnersList />
+        <ScrollList pl={[
+          ['p', 'https://dn42.li/dn42.svg', {height:'200%',transform:'translateY(-25%)'}],
+          ['p', 'https://raw.githubusercontent.com/NeoCloud/NeoNetwork/master/logo.png'],
+          ['p', 'https://peeringdb-media-prod.s3.amazonaws.com/media/logos_user_supplied/network-33599-7fa2825b.jpg', {height:'80%'}],
+          ['p', 'https://peeringdb-media-prod.s3.amazonaws.com/media/logos_user_supplied/organization-42473-dc42bfbc.png', {height:'80%'}],
+          ['p', 'https://dn42.burble.com/burble-dn42-64.png', {height:'30%'}],
+          ['p', 'https://iedon.net/favicon.ico'],
+          ['p', 'https://blog.sherpherd.net/img/sernet-logo-small.svg'],
+          ['p', 'https://avatars.githubusercontent.com/u/88564180?s=200&v=4'],
+          ['p', 'https://nosla42.pmman.tech/storage/logo-light.webp'],
+          ['p', 'https://he.net/images/helogo.gif', {height:'40%'}],
+          ['p', 'https://cloud.nbdnet.com/storage/logo-light.webp', {height:'50%'}],
+          ['p', 'https://cogentco.com/files/images/c2020/cogentco_logo.png', {height:'40%'}],
+          ['p', 'https://static.xhustudio.eu.org/images/svg/CF_logomark.svg', {height:'40%'}],
+          ['p', 'https://intranet.services/favicon.svg'],
+          ['p', '/favicon.svg'],
+          ['p', 'https://szsyzx.cn/assets/icon.svg'],
+          ['p', 'https://bafybeihkkofkadcizwqqy6go2vy6g4ipmw7d5deeiaf2qfy2tt6z5wzoxa.ipfs.dget.top?filename=he-xp-network-logo.jpg', {height:'90%'}],
+          ['p', 'https://www.constant.com/favicons/favicon-96.png', {height:'80%'}],
+        ]}/>
       </section>
       <section>
         <h2>Feedbacks</h2>
+        <ScrollList pl={[
+          ['p', 'https://bafybeiay5gtrxmcysmtzouirxlpxphdxnqvjr542kwfeylfv57thuybile.ipfs.dget.top?filename=kioubit-use-sess-for-trace.webp'],
+          ['p', 'https://bafybeig6gprd5quemycf4ogqy4wwbsvofz2x34yqmrhehq24ximdprnzrq.ipfs.dget.top?filename=kioubit-always-like-sess.webp'],
+          ['p', 'https://bafybeihhce7xeaoavqgfauierjqnb4bevdyoskjlqfizoqfb44gjlalt5i.ipfs.dget.top?filename=cyancc-please-join-yukisino-ix.webp'],
+          ['p', 'https://bafybeic7ury5cowwcqvtrjnmdwv4szjylcot5dsbe43xcipbi66cddxx6i.ipfs.dget.top?filename=nedifinita-driven-by-sess.webp'],
+        ]}/>
       </section>
       <section>
         <h2>Sales</h2>

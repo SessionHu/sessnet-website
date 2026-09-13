@@ -15,9 +15,12 @@
       margin: .5em 0;
     }
   }
+  @media (max-width: 480px) {
+    display: block;
+  }
 }
 
-.partnersList {
+.scrollList {
   overflow: hidden;
   width: 100%;
   > * {
