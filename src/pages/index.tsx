@@ -1,5 +1,6 @@
 import type React from 'react';
 import { Link } from 'react-router-dom';
+import { ClientOnly } from 'vite-react-ssg';
 import styles from './index.module.scss';
 
 interface FeatureCardProps {
@@ -21,20 +22,26 @@ interface ScrollListProps {
 }
 
 const ScrollList = ({ pl }: ScrollListProps) => {
-  for (let i = pl.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [pl[i], pl[j]] = [pl[j], pl[i]];
-  }
 	return (
     <div className={styles.scrollList}>
       <ul>
-        {pl.concat(pl).map((e, i) => {
+        <ClientOnly>{() => {
+          for (let i = pl.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [pl[i], pl[j]] = [pl[j], pl[i]];
+          }
           return (
-            <li key={i}>{
-              e[0] === 'p' ? <img src={e[1]} style={e[2]} /> : e[1]
-            }</li>
+            <>
+              {pl.concat(pl).map((e, i) => {
+                return (
+                  <li key={i}>{
+                    e[0] === 'p' ? <img src={e[1]} style={e[2]} /> : e[1]
+                  }</li>
+                );
+              })}
+            </>
           );
-        })}
+        }}</ClientOnly>
       </ul>
     </div>
   );
