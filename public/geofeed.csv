@@ -2,6 +2,7 @@
 2a0a:d685:100::/40,AQ,,,
 2a0a:d658:1e0::/48,JP,JP-13,Tokyo,
 2a0a:d658:1e0::/64,CN,CN-SH,,
+2a0a:d658:1e0:3::/64,CN,CN-GD,,
 2a0a:d658:1e1::/48,US,US-NJ,Piscataway,
 2a0a:d658:1e1::/64,CA,CA-QC,Montreal,
 2a0a:d658:1e1:454::/64,CA,CA-QC,Montreal,
