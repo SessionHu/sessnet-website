@@ -1,0 +1,4 @@
+Privacy Policy
+SessNetwork does not intentionally collect or retain personal information except where required for the operation, security, or legal compliance of its services.
+Logs may be generated automatically by underlying infrastructure and may contain technical information such as IP addresses and timestamps.
+SessNetwork does not sell personal information.

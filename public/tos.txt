@@ -1,0 +1,21 @@
+Terms of Service
+a. You may use SessNetwork's services for any purpose not prohibited under Section b of these Terms.
+b. You may not use SessNetwork's services for any of the following purposes:
+  1. Any activity that violates the laws or regulations applicable in the jurisdiction where the service is provided.
+  2. Conducting phishing, fraud, spam, denial-of-service attacks, brute-force attacks, penetration, hijacking, or other similar activities against third-party systems without the explicit authorization of the asset owner or its lawful administrator.
+  3. Any activity that endangers the stability of network interconnection and/or infrastructure.
+  4. Using public resources beyond the allocated quota for an extended period of time (10 minutes or more).
+  5. Any activity that is harmful to the natural environment.
+  6. Providing services to entities located in the Republic of Korea (KR; South Korea).
+  7. Any activity prohibited by the relevant service page.
+  8. Malicious activities that may damage the image and/or reputation of SessNetwork and/or its affiliated organizations and/or individuals.
+  9. Impersonating SessNetwork and/or its affiliated organizations and/or individuals.
+  10. Any other activity that SessNetwork considers to be prohibited.
+c. SessNetwork shall not be responsible for any actions or consequences caused by the service user.
+d. Unless otherwise specifically agreed, SessNetwork does not guarantee the availability of any services provided.
+e. For violations of Section b of these Terms, the first confirmed violation will result in a warning. A second confirmed violation will result in suspension of the service, which may be restored only after the user provides a written undertaking. A third confirmed violation will result in termination of the service.
+f. Users whose services have been terminated will receive an account closure notice within seven (7) business days and must terminate all services within the period specified in the notice. A user who disagrees with the decision may submit an objection to the support department no later than three (3) days before the specified final deadline. If a subsequent review results in no change to the decision, no further appeal shall be available.
+g. Users who have reasonable questions or suggestions regarding services provided by SessNetwork are welcome to raise them publicly or privately in a friendly manner, or consult the support department.
+h. SessNetwork may modify these Terms at any time and may not provide timely notice of such changes. Revised Terms shall take effect on the date of publication and shall not apply to actions completed before their effective date.
+i. These Terms are licensed under the CC BY-ND 4.0 license.
+j. SessNetwork reserves the right to interpret these Terms.

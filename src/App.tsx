@@ -9,12 +9,16 @@ export const routes: RouteRecord[] = [
     Component: Layout,
     children: [
       {
+        index: true,
+        Component: React.lazy(() => import('./pages/index')),
+      },
+      {
         path: 'about/',
         Component: React.lazy(() => import('./pages/about')),
       },
       {
-        index: true,
-        Component: React.lazy(() => import('./pages/index')),
+        path: 'terms/',
+        Component: React.lazy(() => import('./pages/terms')),
       },
     ]
   },

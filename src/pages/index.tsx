@@ -99,7 +99,7 @@ export default () => {
       </section>
       <section>
         <h2>Sales</h2>
-        <p>Matrix Group: <Link to="https://matrix.to/#/!YwqwnCuNtSOyWOCytE:matrix.org">!YwqwnCuNtSOyWOCytE:matrix.org</Link></p>
+        <p>Matrix Group: <Link to="https://matrix.to/#/#sessnetwork-chat:matrix.org">#sessnetwork-chat:matrix.org</Link></p>
         <p>E-Mail: <Link to="mailto:sales@sess.moe">sales@sess.moe</Link></p>
       </section>
     </>
